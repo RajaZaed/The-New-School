@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4d4d;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .link-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .link-container a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+
+    .link-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Signup</h1>
+    <form>
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="link-container">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+      <p><a href="forgot_password.html">Forgot Password?</a></p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script >
+
+
+        function toggleMenu() {
+            const navbarMenu = document.querySelector('.navbar ul');
+            navbarMenu.classList.toggle('show');
+        }
+
+        // JavaScript to toggle the menu on and off
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+
+// ho
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const phone = document.getElementById('phone').value;
+    const password = document.getElementById('password').value;
+
+    if (phone && password) {
+        alert('Admin signed up successfully!');
+        // Redirect to the dashboard or save the data here
+        window.location.href = 'admin_dashboard.html'; // Placeholder for redirection
+    } else {
+        alert('Please fill in all fields!');
+    }
+});
+
+
+
+  </script>
+</body>
+</html>

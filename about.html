@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New School Navbar</title>
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+      
+      <img src="assets/images/lgo.png" alt="">  <h3>The New School </h3>
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acedemic.html">Acedemics</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+
+        </ul>
+    </div>
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<!-- / -->
+
+<section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="assets/images/dnka-ch-nJURYGCgP0o-unsplash.jpg" alt="School Building">
+      </div>
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Our school is dedicated to fostering a nurturing environment where students are empowered to excel academically, socially, and emotionally. With a focus on holistic development, we aim to shape future leaders equipped with knowledge, values, and skills.
+        </p>
+        <p>
+          Founded in 1995, we have been committed to delivering quality education through innovative teaching methods, state-of-the-art facilities, and a strong emphasis on character-building and community service.
+        </p>
+        <a href="#more-details" class="btn-learn-more">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3 class="footer-heading">About Us</h3>
+        <p>Welcome to The New School, where learning meets excellence. Our mission is to shape bright futures through quality education.</p>
+      </div>
+      <div class="footer-links">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact Us</h3>
+        <p><strong>Email:</strong> info@thenewschool.com</p>
+        <p><strong>Phone:</strong> +92-123-456-7890</p>
+        <p><strong>Address:</strong> Main Road, Muzaffarabad, Kashmir</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The New School. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="assets/images/facebook_icon-icons.com_59205.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/Whatsapp_37229.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/images/Instagram_icon-icons.com_66804.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script >
+
+
+        function toggleMenu() {
+            const navbarMenu = document.querySelector('.navbar ul');
+            navbarMenu.classList.toggle('show');
+        }
+
+        // JavaScript to toggle the menu on and off
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+
+    </script>
+
+
+  </script>
+</body>
+</html>

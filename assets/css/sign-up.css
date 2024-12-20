@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Navbar Styles */
+.logo {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Add some spacing between the image and the text */
+}
+
+.logo img {
+  max-width: 50px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  
+}
+
+.logo h3 {
+  font-size: 1.2rem; /* Adjust text size for responsiveness */
+  margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff2d2a; /* Sky blue color */
+    padding: 10px 20px;
+}
+
+.navbar .logo h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .menu ul li {
+    margin-right: 20px;
+}
+
+.navbar .menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navbar .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* Hide the menu by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #ff2d2a;
+        text-align: center;
+        line-height: 3.5rem;
+    }
+
+    .navbar .menu ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    .navbar .menu.active {
+        display: block; /* Show menu when active */
+    }
+}
+
+
+.navbar .menu ul li a.active {
+    color: rgb(0, 0, 0); /* Visible on mobile */
+    font-weight: bolder;
+    text-decoration: underline;
+}

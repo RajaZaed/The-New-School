@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1, h2 {
+    color: #e74c3c; /* Happy red */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #e74c3c; /* Happy red */
+    color: white;
+    padding: 2rem;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1.5rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e74c3c; /* Happy red border */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e74c3c;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .overview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

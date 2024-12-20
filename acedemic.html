@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New School Navbar</title>
+  <link rel="stylesheet" href="assets/css/academics.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+      
+      <img src="assets/images/lgo.png" alt="">  <h3>The New School </h3>
+    </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acedemic.html" class="active">Acedemics</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<!-- / -->
+
+  
+  <section id="academics" class="academics">
+    <div class="academics-container">
+      <h2 class="academics-heading">Our Academics</h2>
+      <p class="academics-intro">
+        At The New School, we provide a rich and diverse curriculum tailored to inspire young minds and prepare them for the future.
+      </p>
+      
+      <!-- Programs Section -->
+      <div class="academic-programs">
+        <div class="program-card">
+          <h3>Science</h3>
+          <p>Explore the wonders of physics, chemistry, and biology through hands-on experiments and projects.</p>
+        </div>
+        <div class="program-card">
+          <h3>Mathematics</h3>
+          <p>Build problem-solving skills and logical reasoning with our expert-led math programs.</p>
+        </div>
+        <div class="program-card">
+          <h3>Arts & Humanities</h3>
+          <p>Foster creativity and critical thinking with courses in literature, history, and visual arts.</p>
+        </div>
+      </div>
+      
+      <!-- Achievements Section -->
+      <div class="academic-achievements">
+        <h3>Our Achievements</h3>
+        <p>100% pass rate for the past 5 years, with numerous students excelling in board exams and national competitions.</p>
+      </div>
+      
+      <!-- Testimonials Section -->
+      <div class="testimonials">
+        <h3>What Our Students Say</h3>
+        <div class="testimonial">
+          <p>"The academic programs at The New School have truly shaped my future. The teachers are dedicated and passionate about their subjects!"</p>
+          <p>- John Doe, Science Student</p>
+        </div>
+        <div class="testimonial">
+          <p>"I feel fully prepared for my future, thanks to the comprehensive and engaging curriculum at The New School."</p>
+          <p>- Jane Smith, Math Student</p>
+        </div>
+      </div>
+      
+      <!-- Curriculum Overview -->
+      <div class="curriculum-overview">
+        <h3>Curriculum Overview</h3>
+        <p>Our curriculum is designed to provide a well-rounded education that includes core subjects, extracurricular activities, and life skills training. Students can expect to engage in activities that nurture both academic and personal growth.</p>
+      </div>
+      
+      <!-- Video Section -->
+      <div class="video-section">
+        <h3>Watch Our Journey</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Educational Journey at The New School" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="academic-cta">
+        <a href="#contact" class="cta-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3 class="footer-heading">About Us</h3>
+        <p>Welcome to The New School, where learning meets excellence. Our mission is to shape bright futures through quality education.</p>
+      </div>
+      <div class="footer-links">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact Us</h3>
+        <p><strong>Email:</strong> info@thenewschool.com</p>
+        <p><strong>Phone:</strong> +92-123-456-7890</p>
+        <p><strong>Address:</strong> Main Road, Muzaffarabad, Kashmir</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The New School. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="assets/images/facebook_icon-icons.com_59205.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/Whatsapp_37229.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/images/Instagram_icon-icons.com_66804.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script >
+
+
+        function toggleMenu() {
+            const navbarMenu = document.querySelector('.navbar ul');
+            navbarMenu.classList.toggle('show');
+        }
+
+        // JavaScript to toggle the menu on and off
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+
+    </script>
+
+
+  </script>
+</body>
+</html>
